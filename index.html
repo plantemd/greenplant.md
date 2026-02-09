@@ -15,7 +15,9 @@
         <img src="logo.png" alt="Green Plants">
     </div>
 
-    <ul>
+    <div class="menu-toggle">☰</div>
+
+    <ul id="menu">
         <li><a href="#home">Acasă</a></li>
         <li><a href="#products">Plante</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -25,19 +27,27 @@
 
 <!-- HERO -->
 <header class="hero" id="home">
-    
-    <div class="hero-text">
-        <h1>Bine ai venit la Green Plants</h1>
-        <p>Cele mai frumoase plante pentru casa ta!</p>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1>Green Plants</h1>
+        <p>Transformă casa ta într-un colț de natură</p>
+
+        <div class="hero-buttons">
+            <a href="#products" class="btn-primary">Vezi Plantele</a>
+            <a href="#contact" class="btn-secondary">Contactează-ne</a>
+        </div>
     </div>
+
 </header>
 
 
-<!-- PRODUSE / PLANTE -->
+<!-- PRODUSE -->
 <section class="products" id="products">
 
 <h2>Plante Disponibile</h2>
-
+<input type="text" id="search" placeholder="Caută plantă...">
 <div class="product-container">
 
     <div class="product">
@@ -102,8 +112,6 @@
     </div>
 
 
-
-
 </div>
 
 </section>
@@ -117,6 +125,8 @@
 <p>📞 068155446</p>
 <p>📞 067750888</p>
 
+
+
 </section>
 
 
@@ -125,13 +135,16 @@
 </footer>
 
 
-<!-- LIGHTBOX PENTRU IMAGINI -->
+<!-- LIGHTBOX -->
 <div id="lightbox" class="lightbox">
     <span class="close">&times;</span>
     <img class="lightbox-content" id="lightbox-img">
 </div>
 
+<button id="topBtn">⬆</button>
+
 <script src="script.js"></script>
 
 </body>
 </html>
+
